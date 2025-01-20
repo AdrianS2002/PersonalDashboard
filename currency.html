@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Current Exchange Rates</title>
+    <link rel="stylesheet" href="styles/modals.css">
+    <link rel="stylesheet" href="styles/currency.css"> <!-- Link to the new CSS file -->
+</head>
+<body>
+    <header>
+        <div id="navbar"></div>
+    </header>
+
+    <h1>Current Exchange Rates</h1>
+
+    <!-- Form for selecting the base currency and desired currencies -->
+    <form id="currency-form">
+        <!-- Select for the base currency -->
+        <label for="base-currency">Select the base currency:</label><br>
+        <select id="base-currency" name="base-currency">
+            <!-- Options will be populated dynamically -->
+        </select><br><br>
+
+        <!-- Select for the desired currencies -->
+        <label for="currencies">Select the desired currencies (hold Ctrl for multiple selection):</label><br>
+        <select id="currencies" name="currencies" multiple size="10">
+            <!-- Options will be populated dynamically -->
+        </select><br><br>
+
+        <button type="submit">Show exchange rates</button>
+    </form>
+
+    <!-- Container for displaying the exchange rates -->
+    <div id="exchange-rates">
+        <!-- Content will be updated dynamically -->
+    </div>
+
+    <!-- Include the external JavaScript files -->
+    <script src="javascript/modals.js"></script>
+    <script src="javascript/currency.js"></script>
+    <script src="javascript/navbar.js"></script>
+    <script type="module" src="javascript/auth.js"></script>
+</body>
+</html>
